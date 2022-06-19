@@ -10,17 +10,29 @@
       body {
         padding: 0;
         margin: 0;
+        height: 100%;
       }
       body {
+        display: flex;
+      }
+      body,
+      canvas {
         background-color: black;
       }
       canvas {
-        background-color: yellow;
+        width: 100%;
+        object-fit: contain;
+        image-rendering: crisp-edges;
+        image-rendering: pixelated;
+      }
+      img {
+        display: none;
       }
     </style>
   </head>
   <body>
     <canvas></canvas>
+    <img src="./ken.png" alt="ken" />
     <script defer src="script.js"></script>
   </body>
 </html>
